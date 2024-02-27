@@ -1,0 +1,44 @@
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  border: none;
+  width: 400px;
+  box-shadow: 2px 2px 2px 2px rgb(182, 180, 180);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  padding: 7px 8px;
+  color: white;
+  cursor: pointer;
+  background: rgb(5, 72, 187);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: rgb(72, 118, 197);
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
