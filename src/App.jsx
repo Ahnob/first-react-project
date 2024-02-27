@@ -1,11 +1,24 @@
 import Product from "./Product";
 import products from "./products";
 
+
+function productCard(item){
+  return(
+    <Card
+    key={item.id}
+     title={item.title} 
+    img={item.image}
+    desc={item.description}
+    price={item.price} /> 
+  )
+}
+ 
 function App() {
   return (
     <>
       <h1 className="heading">Our Products</h1>
-      <div className="main-container">
+      {products.map(productCard)}
+      {/* <div className="main-container">
         <Product
           title={products[0].title}
           img={products[0].image}
@@ -68,7 +81,7 @@ function App() {
           desc={products[8].description}
           price={products[8].price}
         />
-      </div>
+      </div> */}
     </>
   );
 }
